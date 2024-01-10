@@ -33,7 +33,8 @@ function App() {
 
   useEffect(()=>{
     setNextSongIndex(() =>{
-      if (currentSongIndex + 1 > songs.length - 1){
+      let length = songs.length;
+      if (currentSongIndex + 1 > length - 1){
         return 0;
       } else{
         return currentSongIndex + 1;
